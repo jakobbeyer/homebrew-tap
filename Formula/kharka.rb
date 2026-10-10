@@ -1,25 +1,25 @@
 class Kharka < Formula
   desc "A small local-first JSON store: every machine keeps a full replica, one hub orders and spreads the changes"
   homepage "https://github.com/jakobbeyer/kharka"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/jakobbeyer/kharka/releases/download/v0.1.0/kharka-aarch64-apple-darwin.tar.xz"
-      sha256 "cba1eb7cd3685d3f128a55fb9d3357bbc3c42f5eb5dd39e94cc66c71832835ea"
+      url "https://github.com/jakobbeyer/kharka/releases/download/v0.1.1/kharka-aarch64-apple-darwin.tar.xz"
+      sha256 "477d076e6c6dc7a4487b9f05a15e197f9273e6563f46b5344d8d8b0a9d43b19e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jakobbeyer/kharka/releases/download/v0.1.0/kharka-x86_64-apple-darwin.tar.xz"
-      sha256 "4ec4977ab9e21afba0559f3d0a4e6f9017161524cf11e208125cb3d1de1e0156"
+      url "https://github.com/jakobbeyer/kharka/releases/download/v0.1.1/kharka-x86_64-apple-darwin.tar.xz"
+      sha256 "00693480c6f4351d73d7877cb388b8f47bc5bbc542288981325b2ec26c28cd7d"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/jakobbeyer/kharka/releases/download/v0.1.0/kharka-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "a042251a9af6c6e2462f3596f36d00f181e8e0ce3297050a64228913e6ce7e56"
+      url "https://github.com/jakobbeyer/kharka/releases/download/v0.1.1/kharka-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "74fe1173b0dbb9bc04909bc9dfc9bbf2ff8cd4123f8854733d700cac6c0ce22d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jakobbeyer/kharka/releases/download/v0.1.0/kharka-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "f42ee3be32bbcfb7fd3138c958528cf3057e619d7bfcd3e7323c4213ab8ea0c3"
+      url "https://github.com/jakobbeyer/kharka/releases/download/v0.1.1/kharka-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "c377f3399849a96f00b705d2c8d35494ba9f7c2b7aea286024a8c7be702ba161"
     end
   end
   license "MIT"
