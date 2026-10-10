@@ -1,25 +1,25 @@
 class HerdrKharka < Formula
   desc "Writes what a machine's herdr runs into kharka, on every change"
   homepage "https://github.com/jakobbeyer/herdr-kharka"
-  version "0.1.0"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/jakobbeyer/herdr-kharka/releases/download/v0.1.0/herdr-kharka-aarch64-apple-darwin.tar.xz"
-      sha256 "1688b7a928991056436549d2e0f94fcb54e8b9c6532b51bc9a485f7b643f3542"
+      url "https://github.com/jakobbeyer/herdr-kharka/releases/download/v0.2.0/herdr-kharka-aarch64-apple-darwin.tar.xz"
+      sha256 "225b1189b7c6a2261d95f59a22541aa36d80f2f62c78b61604862ed1f21a1c84"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jakobbeyer/herdr-kharka/releases/download/v0.1.0/herdr-kharka-x86_64-apple-darwin.tar.xz"
-      sha256 "4c9844331752fbac009937acf745504b39453a241e80842ea33db9e5bf27c1b1"
+      url "https://github.com/jakobbeyer/herdr-kharka/releases/download/v0.2.0/herdr-kharka-x86_64-apple-darwin.tar.xz"
+      sha256 "14d13821b25279e7ec031f889fa8a16819d5243364f1822e2d219aef4a730403"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/jakobbeyer/herdr-kharka/releases/download/v0.1.0/herdr-kharka-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "dd5dac73f4d35ad7b20bfc7c710db28910771d4f8e81f70e36b01f48432ac450"
+      url "https://github.com/jakobbeyer/herdr-kharka/releases/download/v0.2.0/herdr-kharka-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "dcc148f73603c9d412d4caf6fa43ff069bff3a4c057983b4ffbe02496db3e0d1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jakobbeyer/herdr-kharka/releases/download/v0.1.0/herdr-kharka-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "7cf59b4bb3a9d72b959552835f047f577c5218fe97345229394c9b03f471ff16"
+      url "https://github.com/jakobbeyer/herdr-kharka/releases/download/v0.2.0/herdr-kharka-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "834ed9060d282a162e5a9f17566e089cfae2b4e9a2fcea63da215c3ad8e61341"
     end
   end
   license "MIT"
